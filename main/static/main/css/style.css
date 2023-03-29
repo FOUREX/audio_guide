@@ -1,0 +1,8 @@
+body {
+    background: black;
+}
+
+.interactive_map {
+    display: flex;
+    margin: 0 auto;
+}
