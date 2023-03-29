@@ -1,4 +1,4 @@
-from django.http import HttpRequest, HttpResponse, HttpResponseNotFound
+from django.http import HttpRequest, HttpResponseNotFound
 from django.shortcuts import redirect, render
 
 
