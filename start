@@ -1,3 +1,3 @@
 . venv/bin/activate
 python3.10 manage.py collectstatic
-python3.10 manage.py runserver 91.199.45.219:25565
+python3.10 manage.py runserver 91.199.45.219:25565 --insecure
