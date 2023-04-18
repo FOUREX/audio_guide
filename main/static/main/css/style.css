@@ -1,8 +1,63 @@
-body {
-    background: black;
+@font-face {
+    font-family: "Philosopher";
+    src: local("../fonsts/Philosopher-Regular.ttf"), url("../fonts/Philosopher-Regular.ttf") format("truetype");
 }
 
-.interactive_map {
+
+@font-face {
+    font-family: "Philosopher";
+    src: local("../fonsts/Philosopher-Bold.ttf"), url("../fonts/Philosopher-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+
+body {
+    background: black;
+    color: white;
+    margin: 0;
+}
+
+
+.main-page {
+    position: relative;
     display: flex;
     margin: 0 auto;
+    z-index: 0;
+    max-width: 1280px;
+    width: 100%;
+}
+
+
+.main-page-image {
+    width: 100%;
+}
+
+
+.main-page-foreground {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-page-foreground-up {
+    background-color: #AD8F58;
+    opacity: 80%;
+    width: 100%;
+    height: 70%;
+}
+
+
+.main-page-foreground-down {
+    background-color: #59AE69;
+    width: 100%;
+    height: 30%;
+}
+
+
+.main-page-foreground h1 {
+    font-family: Philosopher, serif;
+    text-align: center;
+    margin-top: 0;
 }

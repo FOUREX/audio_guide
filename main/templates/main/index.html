@@ -9,11 +9,17 @@
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
 </head>
 <body>
-    <iframe
-            class="interactive_map"
-            src="https://www.google.com/maps/d/embed?mid=1BxA2xL69daC4vRZDA6pl8m6rDIcIoCE&ehbc=2E312F"
-            width="800"
-            height="600"
-    ></iframe>
+    <div class="main-page">
+        <img class="main-page-image" src="{% static 'main/images/main_page_image.png' %}" alt="">
+        <div class="main-page-foreground">
+            <div class="main-page-foreground-up"></div>
+            <div class="main-page-foreground-down">
+                <div>
+                    <h1 style="font-size: 48px; font-weight: normal">AUDIOWALK</h1>
+                    <h1 style="font-size: 64px; font-weight: bold">СЛІДАМИ ПОЛТАВСЬКИХ ЄВРЕЇВ</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
