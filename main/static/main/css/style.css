@@ -12,6 +12,7 @@
 
 
 body {
+    font-family: Philosopher-Regular, serif;
     background: black;
     color: white;
     margin: 0;
@@ -53,11 +54,12 @@ body {
     background-color: #59AE69;
     width: 100%;
     height: 30%;
+    display: grid;
 }
 
 
 .main-page-foreground h1 {
     font-family: Philosopher, serif;
     text-align: center;
-    margin-top: 0;
+    margin: 0;
 }
