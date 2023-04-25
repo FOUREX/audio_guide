@@ -3,7 +3,6 @@
     src: local("../fonsts/Philosopher-Regular.ttf"), url("../fonts/Philosopher-Regular.ttf") format("truetype");
 }
 
-
 @font-face {
     font-family: "Philosopher";
     src: local("../fonsts/Philosopher-Bold.ttf"), url("../fonts/Philosopher-Bold.ttf") format("truetype");
@@ -12,27 +11,40 @@
 
 
 body {
-    font-family: Philosopher-Regular, serif;
-    background: black;
-    color: white;
-    margin: 0;
-}
-
-
-.main-page {
-    position: relative;
-    display: flex;
     margin: 0 auto;
-    z-index: 0;
     max-width: 1280px;
     width: 100%;
 }
 
+body img {
+    width: 512px;
+    outline: #59AE69 2px solid;
+    margin: 16px;
+}
+
+body audio {
+    display: flex;
+    margin: 16px auto;
+    width: 450px;
+}
+
+body video {
+    width: 512px;
+    outline: #59AE69 2px solid;
+    margin: 16px;
+}
+
+.main-page {
+    position: relative;
+    display: flex;
+    z-index: 0;
+}
 
 .main-page-image {
     width: 100%;
+    outline: 0;
+    margin: 0;
 }
-
 
 .main-page-foreground {
     position: absolute;
@@ -41,14 +53,12 @@ body {
     height: 100%;
 }
 
-
 .main-page-foreground-up {
     background-color: #AD8F58;
     opacity: 80%;
     width: 100%;
     height: 70%;
 }
-
 
 .main-page-foreground-down {
     background-color: #59AE69;
@@ -57,9 +67,72 @@ body {
     display: grid;
 }
 
-
 .main-page-foreground h1 {
     font-family: Philosopher, serif;
     text-align: center;
+    margin: 0;
+}
+
+.knowing {
+    font-family: Philosopher, serif;
+    margin: 32px;
+}
+
+.knowing h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+}
+
+.knowing div {
+    text-indent: 1.25cm;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.knowing a {
+    color: #0500FF;
+}
+
+.knowing img {
+    float: left;
+}
+
+.introduction {
+    font-family: Philosopher, serif;
+    margin: 32px;
+}
+
+.introduction h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+}
+
+.introduction div {
+    text-indent: 1.25cm;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.introduction img {
+    float: right;
+}
+
+.introduction video {
+    float: right;
+}
+
+.interactive-map {
+    font-family: Philosopher, serif;
+    margin: 32px;
+}
+
+.interactive-map h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 48px;
     margin: 0;
 }
