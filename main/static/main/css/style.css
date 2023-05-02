@@ -10,6 +10,10 @@
 }
 
 
+a {
+    color: #0500FF;
+}
+
 body {
     margin: 0 auto;
     max-width: 1280px;
@@ -32,6 +36,14 @@ body video {
     width: 512px;
     outline: #59AE69 2px solid;
     margin: 16px;
+}
+
+body hr {
+    width: 70%;
+    border-radius: 2px;
+    border: 0;
+    background-color: #59AE69;
+    height: 4px;
 }
 
 .main-page {
@@ -91,17 +103,34 @@ body video {
     font-size: 24px;
 }
 
-.knowing a {
-    color: #0500FF;
-}
-
 .knowing img {
     float: left;
 }
 
 .introduction {
     font-family: Philosopher, serif;
+    position: relative;
     margin: 32px;
+    height: 465px;
+    overflow: hidden;
+}
+
+.see-more {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0;
+    border-radius: 10px;
+    background: #59AE69;
+    padding: 5px;
+}
+
+.see-more p {
+    margin: 8px auto;
+}
+
+.see-more:hover {
+    background-color: yellow;
+    cursor: pointer;
 }
 
 .introduction h1 {
@@ -135,4 +164,52 @@ body video {
     text-align: center;
     font-size: 48px;
     margin: 0;
+}
+
+.quiz {
+    font-family: Philosopher, serif;
+    margin: 32px;
+    display: table;
+}
+
+.quiz h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+}
+
+.quiz div {
+    text-indent: 1.25cm;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.quiz img {
+    float: left;
+}
+
+.footer {
+    background-color: #59AE69;
+    font-family: Philosopher, serif;
+    margin-top: 32px;
+    padding: 8px 32px;
+    display: flex;
+}
+
+.footer div {
+    margin: auto;
+    text-align: center;
+}
+
+.footer p {
+    margin: 2px;
+}
+
+.footer hr {
+    width: 180px;
+    border-radius: 1px;
+    border: 0;
+    background-color: #FFFFFF;
+    height: 2px;
 }
