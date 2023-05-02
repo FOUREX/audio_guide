@@ -24,6 +24,7 @@ body img {
     width: 512px;
     outline: #59AE69 2px solid;
     margin: 16px;
+    border-radius: 10px;
 }
 
 body audio {
@@ -36,6 +37,7 @@ body video {
     width: 512px;
     outline: #59AE69 2px solid;
     margin: 16px;
+    border-radius: 10px;
 }
 
 body hr {
@@ -50,6 +52,8 @@ body hr {
     position: relative;
     display: flex;
     z-index: 0;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
 }
 
 .main-page-image {
@@ -195,6 +199,11 @@ body hr {
     margin-top: 32px;
     padding: 8px 32px;
     display: flex;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer h1 {
+    margin-right: 150px;
 }
 
 .footer div {
@@ -203,13 +212,12 @@ body hr {
 }
 
 .footer p {
-    margin: 2px;
+    margin: 1px;
 }
 
 .footer hr {
     width: 180px;
-    border-radius: 1px;
     border: 0;
     background-color: #FFFFFF;
-    height: 2px;
+    height: 1px;
 }
