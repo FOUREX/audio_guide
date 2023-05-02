@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <title>Аудіогід</title>
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+    <script src="{% static 'main/js/index.js' %}"></script>
 </head>
 <body>
     <div class="main-page">
@@ -55,7 +56,7 @@
         <div>
             Перші статистичні відомості про проживання євреїв в 12 повітах Полтавської губернії відносяться до 1804 року. Все населення її становило 1 млн. 373 тис. 29 осіб. Євреї –2114 чол. чоловічої статі. Скільки жінок і дітей, даних немає, але якщо збільшити кількість чоловічої статі вдвічі, євреїв на початку XIX століття було до 5 тисяч осіб. Це 0,4% всього населення. У Полтаві євреїв-купців було  18, міщан – 285 (чоловічої статі). В 1897 р. населення Полтави досягло 53703 чоловік. З них євреїв –близько 10 тис.
         </div>
-        <div id="see-more"  class="see-more" onclick="yep(this.id)">
+        <div id="see-more"  class="see-more" onclick="seeMore(this.id)">
             <p>Дивитися більше...</p>
         </div>
         <div>
@@ -147,15 +148,5 @@
             <p>м. Полтава, вул. Пушкіна, 83а</p>
         </div>
     </div>
-
-    <script>
-        function yep(clicked_id) {
-            let element = document.getElementById("introduction")
-            element.style.height = "100%"
-
-            let btn = document.getElementById(clicked_id)
-            btn.style.display = "none"
-        }
-    </script>
 </body>
 </html>
